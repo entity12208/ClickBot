@@ -8,7 +8,7 @@ else()
 endif()
 set(CMAKE_CXX_VISIBILITY_PRESET hidden)
 
-project(Template VERSION 1.0.0)
+project(ClickBot VERSION 1.0.0)
 
 # Add all source files inside src (recursively)
 file(GLOB_RECURSE SOURCES CONFIGURE_DEPENDS src/*.cpp)
@@ -26,17 +26,3 @@ add_subdirectory($ENV{GEODE_SDK} ${CMAKE_CURRENT_BINARY_DIR}/geode)
 
 # Set up dependencies, resources, and link Geode.
 setup_geode_mod(${PROJECT_NAME})
-
-if (APPLE)
-    # Link ApplicationServices for CGEvent
-    find_library(APP_SERVICES ApplicationServices)
-    target_link_libraries(${PROJECT_NAME} PRIVATE "${APP_SERVICES}")
-elseif(UNIX AND NOT APPLE)
-    # X11 + XTest
-    find_package(X11 REQUIRED)
-    find_library(XTEST_LIB Xtst)
-    target_include_directories(${PROJECT_NAME} PRIVATE ${X11_INCLUDE_DIR})
-    target_link_libraries(${PROJECT_NAME} PRIVATE ${X11_LIBRARIES} ${XTEST_LIB})
-elseif(WIN32)
-    target_link_libraries(${PROJECT_NAME} PRIVATE user32)
-endif()
