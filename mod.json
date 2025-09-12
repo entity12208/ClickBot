@@ -1,16 +1,16 @@
 {
-	"geode": "$GEODE_VERSION",
+	"geode": "4.8.0",
 	"gd": {
 		"win": "2.2074",
 		"android": "2.2074",
 		"mac": "2.2074",
 		"ios": "2.2074"
 	},
-	"id": "$MOD_ID",
-	"name": "$MOD_NAME",
-	"version": "$MOD_VERSION",
-	"developer": "$MOD_DEVELOPER",
-	"description": "$MOD_DESCRIPTION",
+	"id": "entity.clickbot",
+	"name": "ClickBot",
+	"version": "1.0.0",
+	"developer": "Entity12208",
+	"description": "A refined ClickBot for GD!",
 	"dependencies": {
 		"geode.node-ids": ">=v1.20.0"
 	}
