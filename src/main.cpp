@@ -1,7 +1,7 @@
 #include <Geode/Geode.hpp>
 #include <Geode/modify/PlayLayer.hpp>
 #include <Geode/ui/GeodeUI.hpp>
-#include <Geode/binding/InputNode.hpp>
+#include <Geode/ui/InputNode.hpp> // Corrected include path
 #include <Geode/utils/cocos.hpp>
 #include <Geode/binding/ButtonSprite.hpp>
 #include <Geode/binding/MenuLayer.hpp>
