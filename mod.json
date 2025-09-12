@@ -1,17 +1,39 @@
 {
-	"geode": "4.8.0",
-	"gd": {
-		"win": "2.2074",
-		"android": "2.2074",
-		"mac": "2.2074",
-		"ios": "2.2074"
-	},
-	"id": "entity.clickbot",
-	"name": "ClickBot",
-	"version": "1.0.0",
-	"developer": "Entity12208",
-	"description": "A refined ClickBot for GD!",
-	"dependencies": {
-		"geode.node-ids": ">=v1.20.0"
-	}
+    "geode": "4.8.0",
+    "gd": {
+        "win": "2.2074",
+        "android": "2.2074",
+        "mac": "2.2074",
+        "ios": "2.2074"
+    },
+    "id": "entity.clickbot",
+    "name": "ClickBot",
+    "version": "1.0.0",
+    "developer": "Entity12208",
+    "description": "A refined ClickBot for GD!",
+    "dependencies": {
+        "geode.node-ids": ">=v1.20.0"
+    },
+    "settings": {
+        "hold-time": {
+            "name": "Hold Time (ms)",
+            "type": "int",
+            "default": 100,
+            "min": 1,
+            "control": {
+                "type": "input",
+                "placeholder": "100"
+            }
+        },
+        "release-time": {
+            "name": "Release Time (ms)",
+            "type": "int",
+            "default": 100,
+            "min": 1,
+            "control": {
+                "type": "input",
+                "placeholder": "100"
+            }
+        }
+    }
 }
