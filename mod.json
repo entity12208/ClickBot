@@ -1,10 +1,7 @@
 {
     "geode": "4.8.0",
     "gd": {
-        "win": "2.2074",
-        "android": "2.2074",
-        "mac": "2.2074",
-        "ios": "2.2074"
+        "win": "2.2074"
     },
     "id": "entity.clickbot",
     "name": "ClickBot",
@@ -12,6 +9,7 @@
     "developer": "Entity12208",
     "description": "A refined ClickBot for GD!",
     "dependencies": {
-        "geode.node-ids": ">=v1.20.0"
+        "geode.node-ids": ">=v1.20.0",
+        "geode.custom-keybinds": ">=v1.10.4"
     }
 }
