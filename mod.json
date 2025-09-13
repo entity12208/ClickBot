@@ -13,27 +13,5 @@
     "description": "A refined ClickBot for GD!",
     "dependencies": {
         "geode.node-ids": ">=v1.20.0"
-    },
-    "settings": {
-        "hold-time": {
-            "name": "Hold Time (ms)",
-            "type": "int",
-            "default": 100,
-            "min": 1,
-            "control": {
-                "type": "input",
-                "placeholder": "100"
-            }
-        },
-        "release-time": {
-            "name": "Release Time (ms)",
-            "type": "int",
-            "default": 100,
-            "min": 1,
-            "control": {
-                "type": "input",
-                "placeholder": "100"
-            }
-        }
     }
 }
